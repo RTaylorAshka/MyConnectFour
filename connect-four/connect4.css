@@ -1,0 +1,191 @@
+/* game board table */
+body {
+  background-color: rgb(22, 22, 22);
+}
+
+#game{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+
+
+#board td {
+  width: 100px;
+  height: 100px;
+  border: solid 1px #666;
+  
+}
+
+/* pieces are div within game table cells: draw as colored circles */
+
+.piece.pl1{
+  
+  
+
+  margin: 10px;
+  width: 80%;
+  height: 80%;
+
+  background-color: rgb(255, 0, 0);
+  border-radius: 50%;
+  display: inline-block;
+
+  
+}
+
+.piece.pl2{
+  
+  
+
+  margin: 10px;
+  width: 80%;
+  height: 80%;
+
+  background-color: rgb(98, 0, 255);
+  border-radius: 50%;
+  display: inline-block;
+
+  
+}
+
+
+
+
+
+/* TODO: make pieces red/blue,  depending on player 1/2 piece */
+
+/* column-top is table row of clickable areas for each column */
+
+#column-top td {
+  border: dashed 1px lightgray;
+}
+
+#column-top td:hover {
+  background-color: gold;
+}
+
+
+/* animations */
+
+.drop6{
+  animation: dropMe6 0.45s ease-in forwards;
+}
+
+@keyframes dropMe6 {
+  0% {
+    transform: translateY(-600%) scaleY(200%);
+    
+  }
+  
+  80% {
+    transform: translateY(20%)  scaleY(100%);
+    
+  }
+  100% {
+    transform: translateY(0%)  scaleY(100%);
+    
+  }
+}
+
+.drop5{
+  animation: dropMe5 0.4s ease-in forwards;
+  
+}
+
+@keyframes dropMe5 {
+  0% {
+    transform: translateY(-500%) scaleY(180%);
+    
+  }
+  
+  80% {
+    transform: translateY(20%)  scaleY(100%);
+    
+  }
+  100% {
+    transform: translateY(0%)  scaleY(100%);
+    
+  }
+}
+
+.drop4{
+  animation: dropMe4 0.35s ease-in forwards;
+}
+
+@keyframes dropMe4 {
+  0% {
+    transform: translateY(-400%) scaleY(160%);
+    
+  }
+  
+  80% {
+    transform: translateY(20%)  scaleY(100%);
+    
+  }
+  100% {
+    transform: translateY(0%)  scaleY(100%);
+    
+  }
+}
+
+.drop3{
+  animation: dropMe3 0.3s ease-in forwards;
+}
+
+@keyframes dropMe3 {
+  0% {
+    transform: translateY(-300%) scaleY(125%);
+    
+  }
+  
+  80% {
+    transform: translateY(20%)  scaleY(100%);
+    
+  }
+  100% {
+    transform: translateY(0%)  scaleY(100%);
+    
+  }
+}
+
+.drop2{
+  animation: dropMe2 0.25s ease-in forwards;
+}
+
+@keyframes dropMe2 {
+  0% {
+    transform: translateY(-200%) scaleY(110%);
+    
+  }
+  
+  80% {
+    transform: translateY(20%)  scaleY(100%);
+    
+  }
+  100% {
+    transform: translateY(0%)  scaleY(100%);
+    
+  }
+}
+
+.drop1{
+  animation: dropMe1 0.2s ease-in forwards;
+}
+
+@keyframes dropMe1 {
+  0% {
+    transform: translateY(-100%) scaleY(105%);
+    
+  }
+  
+  80% {
+    transform: translateY(20%)  scaleY(100%);
+    
+  }
+  100% {
+    transform: translateY(0%)  scaleY(100%);
+    
+  }
+}
